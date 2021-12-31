@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <title>ZOOP|| Pagina Principal</title>
+  </head>
+  <body class="bg">
+    <main class="bgMain">
+      <h2 class="titulo">"Bienvenido a ZOOP"</h2>
+      <p class="parrafo">
+        Se le pedira que por favor rellene los siguientes datos para poder
+        procesar su pedido e identificar al solicitante
+      </p>
+      <div class="centrarFormulario">
+        <form id="formulario">
+          <label for="nombre">Nombre:</label>
+          <input id="nombre" type="text" placeholder="Ingrese su nombre" />
+          <label for="apellido">Apellido:</label>
+          <input id="apellido" type="text" placeholder="Ingrese su apellido" />
+          <label for="email">email:</label>
+          <input id="email" type="email" placeholder="Ingrese su email" />
+          <label for="edad">Edad:</label>
+          <input id="edad" type="number" placeholder="Ingrese su Edad" />
+          <label for="id">Id:</label>
+          <input
+            id="id"
+            type="number"
+            placeholder="Ingrese su n° de cliente en orden"
+          />
+          <label for="dni">dni:</label>
+          <input id="dni" type="number" placeholder="Ingrese su DNI" />
+          <label for="telefono">Telefono:</label>
+          <input id="telefono" type="number" placeholder="Ingrese su Telefono" />
+          <label for="calle">Dirección:</label>
+          <input id="Dirección" type="text" placeholder="Ingrese su Dirección" />
+          <button id="btnLoad" type="submit">Enviar</button>
+          <button type="reset">Restablecer</button>
+          <button type="button" id="btnDeleteStorage">Reiniciar lista</button>
+        </form>
+      </div>
+      <table class="tabla">
+        <thead id="tableHead">
+          <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+            <th>Edad</th>
+            <th>DNI</th>
+            <th>Teléfono</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+      <script src="js/main.js"></script>
+      <footer>
+        <a href="https://www.facebook.com/"><img src="imagenes/facebook.svg" alt="facebook"></a>
+        <a href="https://twitter.com/login"><img src="imagenes/twitter.svg" alt="twitter"></a>
+      </footer>
+  </body>
+</html>
