@@ -39,6 +39,10 @@
   background-color: darkgreen;
   opacity: 0.8;
 }
+.parrafoImportante {
+  font-size: 25px;
+  color: red;
+}
 #formulario {
   width: 500px;
   background-color: turquoise;
